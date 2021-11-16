@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "515930359428",
+    "project_id": "uia-kpi",
+    "storage_bucket": "uia-kpi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:515930359428:android:44b30bc408b0966c29a4d1",
+        "android_client_info": {
+          "package_name": "com.example.uia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "515930359428-3nea57v3p4bb8a55ekqq71q1muij76qc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxzUeLhNjDnScTbBe2L5xVR13q6ap3hng"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "515930359428-3nea57v3p4bb8a55ekqq71q1muij76qc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
