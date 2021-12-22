@@ -7,11 +7,11 @@ class MoreWidget extends StatelessWidget {
   final Color color;
   late GoogleMapController mapController;
 
-  final LatLng _center = const LatLng(45.521563, -122.677433);
-  static final LatLng _kMapCenter = LatLng(-6.26070, 106.91016);
+  final LatLng center = const LatLng(-6.2622212, 106.9101841);
+  static final LatLng _kMapCenter = LatLng(-6.2622212, 106.9101841);
 
   static final CameraPosition _kInitialPosition =
-      CameraPosition(target: _kMapCenter, zoom: 18.0, tilt: 0, bearing: 0);
+      CameraPosition(target: _kMapCenter, zoom: 16, tilt: 0, bearing: 0);
 
   MoreWidget(this.color);
 
@@ -24,7 +24,7 @@ class MoreWidget extends StatelessWidget {
     };
   }
 
-  void _onMapCreated(GoogleMapController controller) {
+  void onMapCreated(GoogleMapController controller) {
     mapController = controller;
   }
 

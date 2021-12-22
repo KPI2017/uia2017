@@ -6,15 +6,15 @@ import 'package:uia/childs/Views/NewsView.dart';
 class HomeWidget extends StatelessWidget {
   final db = FirebaseFirestore.instance;
 
-  final Color color;
+  final String path;
 
-  HomeWidget(this.color);
+  HomeWidget(this.path);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: StreamBuilder<QuerySnapshot>(
-        stream: db.collection('News').snapshots(),
+        stream: db.collection(path).snapshots(),
         builder: (context, snapshot) {
           print(snapshot);
           if (!snapshot.hasData) {

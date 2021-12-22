@@ -16,7 +16,11 @@ class DosenView extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         Navigator.push(
-            context, MaterialPageRoute(builder: (context) => DosenDetailView(dosen: dosen,)));
+            context,
+            MaterialPageRoute(
+                builder: (context) => DosenDetailView(
+                      dosen: dosen,
+                    )));
       },
       child: Container(
           margin: EdgeInsets.only(bottom: 24),
@@ -48,9 +52,7 @@ class DosenView extends StatelessWidget {
                       Text(
                         dosen.nama,
                         maxLines: 2,
-                        style: TextStyle(
-                            color: Colors.black87,
-                            fontSize: 17),
+                        style: TextStyle(color: Colors.black87, fontSize: 19),
                       ),
                     ],
                   )

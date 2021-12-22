@@ -15,41 +15,30 @@ class FakultasView extends StatelessWidget {
     List<Widget> columnContent = [];
 
     for (String content in fakultas.contents)
-      columnContent.add(
-        MenuItemView(
-          title: content,
-          posturl:
-          "https://firebasestorage.googleapis.com/v0/b/kpi-uia.appspot.com/o/silabuskpi.pdf?alt=media&token=279443df-0633-40d7-a102-d900f04cd2fe",
-          iconData: Icons.school,
-          destinationView: DestinationView.fakultasContent,
-          subtitle: "UIA program studies",
-        )
-      );
+      columnContent.add(MenuItemView(
+        title: content,
+        posturl:
+            "https://firebasestorage.googleapis.com/v0/b/kpi-uia.appspot.com/o/silabuskpi.pdf?alt=media&token=279443df-0633-40d7-a102-d900f04cd2fe",
+        iconData: Icons.school,
+        destinationView: DestinationView.fakultasContent,
+        subtitle: "",
+      ));
 
     return columnContent;
   }
+
   List<Fakultas> vehicles = [
     new Fakultas(
-      'Fakultas Agama Islam',
-      ['KPI', 'PAI', 'Perbankan Syariah'],
-      Icons.motorcycle,
-    ),
-    new Fakultas(
-      'Fakultas Teknik',
-      ['Mesin', 'Industri', 'Informatika'],
-      Icons.motorcycle,
-    ),
-    new Fakultas(
-      'Fakultas Hukum',
-      [],
-      Icons.motorcycle,
+      'KPI',
+      ['Dosen', 'Silabus', 'E-Mading', 'Visi dan Misi'],
+      Icons.school,
     ),
   ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Fakultas'),
+        title: Text('Komunikasi Penyiaran Islam'),
         backgroundColor: Colors.green,
       ),
       body: new ListView.builder(
@@ -59,15 +48,15 @@ class FakultasView extends StatelessWidget {
             return MenuItemView(
               title: vehicles[i].title,
               posturl:
-              "https://firebasestorage.googleapis.com/v0/b/kpi-uia.appspot.com/o/silabuskpi.pdf?alt=media&token=279443df-0633-40d7-a102-d900f04cd2fe",
+                  "https://firebasestorage.googleapis.com/v0/b/kpi-uia.appspot.com/o/silabuskpi.pdf?alt=media&token=279443df-0633-40d7-a102-d900f04cd2fe",
               iconData: Icons.school,
               destinationView: DestinationView.fakultasContent,
-              subtitle: "UIA program studies",
+              subtitle: "",
             );
           } else {
             return new ExpansionTile(
               title: new Text(vehicles[i].title),
-              subtitle: new Text("UIA program studies"),
+              subtitle: new Text(""),
               leading: Icon(vehicles[i].icon),
               children: <Widget>[
                 Padding(
