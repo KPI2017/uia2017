@@ -5,7 +5,7 @@
 
    <application
         android:label="uia"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/launcher_icon"
         android:usesCleartextTraffic="true">
         <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyBd8V95O7TA6YPnY2M5pPp4s9LtZ8iSRzE"/>
         <activity
