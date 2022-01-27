@@ -75,6 +75,11 @@ class MenuItemView extends StatelessWidget {
           MaterialPageRoute(builder: (context) => FakultasContentView()));
     } else if (title == "Silabus") {
       onTappedUrlContent();
+      // onTappedWebViewContent(context,
+      // "https://firebasestorage.googleapis.com/v0/b/uia-kpi.appspot.com/o/Visi%20misi%20KPI.pdf?alt=media&token=0e63512a-0881-4228-8be3-86a1102c90b4");
+      // posturl =
+      // "https://firebasestorage.googleapis.com/v0/b/uia-kpi.appspot.com/o/Visi%20misi%20KPI.pdf?alt=media&token=0e63512a-0881-4228-8be3-86a1102c90b4";
+      // onTappedUrlContent();
     } else if (title == "E-Mading") {
       Navigator.push(
           context, MaterialPageRoute(builder: (context) => EmadingWidget()));

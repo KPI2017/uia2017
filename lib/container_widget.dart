@@ -37,7 +37,7 @@ class _ContainerState extends State<Container_Widget> {
           ),
           new BottomNavigationBarItem(
             icon: Icon(Icons.school),
-            label: ('Learning'),
+            label: ('M-UIA'),
           ),
           new BottomNavigationBarItem(
               icon: Icon(Icons.more_horiz), label: ('More'))
